@@ -14,4 +14,5 @@ def run(plan, args):
     output = datastore_package.add_multiple_datastore_services(plan, args.num_datastores, args.parallel)
 
     plan.print("Package " + PACKAGE_NAME_FOR_LOGGING + " successfully deployed")
+    plan.print("Added this to separate between commits")
     return output
